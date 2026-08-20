@@ -1,0 +1,46 @@
+filters:
+  and:
+    - file.inFolder("health")
+    - 'type == "health"'
+
+formulas:
+  is_today: 'if(date, date(date) == today(), false)'
+
+properties:
+  date:
+    displayName: Date
+  resting_hr:
+    displayName: "Resting HR"
+  sleep_hours:
+    displayName: "Sleep (h)"
+  hrv:
+    displayName: HRV
+  body_battery_high:
+    displayName: "BB High"
+  body_battery_low:
+    displayName: "BB Low"
+
+views:
+  - type: table
+    name: "Today"
+    filters:
+      and:
+        - 'formula.is_today'
+    order:
+      - date
+      - resting_hr
+      - sleep_hours
+      - hrv
+      - body_battery_high
+      - body_battery_low
+
+  - type: table
+    name: "Recent"
+    order:
+      - date
+      - resting_hr
+      - sleep_hours
+      - hrv
+      - body_battery_high
+      - body_battery_low
+    limit: 14

@@ -14,7 +14,10 @@ type: home
 ![[training/Training.base#Last 30 Days]]
 
 ## ❤️ Today's Readiness
-_Pending Garmin connection — sleep, HRV, resting HR, and Body Battery/recovery will show here once `health/` notes start coming in._
+![[health/Health.base#Today]]
+
+## 📈 Recent Readiness Trend
+![[health/Health.base#Recent]]
 
 ## 🛠 Skills Installed
 - **obsidian-markdown** — wikilinks, embeds, callouts, properties
