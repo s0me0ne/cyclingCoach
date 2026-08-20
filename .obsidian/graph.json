@@ -40,8 +40,12 @@
       "color": { "a": 1, "rgb": 9807270 }
     },
     {
-      "query": "file:Rides OR file:Runs OR file:Swims OR file:Lifts OR file:Walks OR file:Workouts",
+      "query": "file:Rides OR file:Runs OR file:Swims OR file:Lifts OR file:Walks OR file:Workouts OR file:Daily",
       "color": { "a": 1, "rgb": 15790320 }
+    },
+    {
+      "query": "path:daily/",
+      "color": { "a": 1, "rgb": 15277667 }
     }
   ],
   "collapse-display": true,

@@ -20,7 +20,7 @@ Heart-rate and power zones live in [[athlete-profile]] — use them whenever dis
 ## Vault conventions
 Every future note in this vault follows this structure:
 
-**Folders** — one per domain: `training/` (dated sessions), `reviews/`, `races/`, `health/`.
+**Folders** — one per domain: `training/` (dated sessions), `reviews/`, `races/`, `health/`, `daily/` (one wrap-up note per calendar day, kept current by the `wrap-my-day` skill).
 
 **Property block** — every note opens with a YAML frontmatter block. Training notes use:
 ```yaml
@@ -32,9 +32,9 @@ vert_m: <number>
 avg_hr: <number or blank if unavailable>
 strava_id: <activity id, for dedup>
 ```
-Race notes use `type: race`, `date`, `distance_km`, `vert_m`, `status`. Hub notes use `type: hub`. Never invent a numeric value — leave the field blank if the source data doesn't have it.
+Race notes use `type: race`, `date`, `distance_km`, `vert_m`, `status`. Hub notes use `type: hub`. Daily notes use `type: daily`, `date`. Never invent a numeric value — leave the field blank if the source data doesn't have it.
 
-**Hub links** — every dated/leaf note ends with a `## Links` section wikilinking to its discipline hub (e.g. `[[Rides]]`, `[[Runs]]`, `[[Swims]]`, `[[Lifts]]`, `[[Walks]]`, `[[Races]]`). Each hub note itself links to `[[athlete-os]]`, so the graph clusters by discipline with `athlete-os` as the center. See the wikilink rule below for the general version of this.
+**Hub links** — every dated/leaf note ends with a `## Links` section wikilinking to its discipline hub (e.g. `[[Rides]]`, `[[Runs]]`, `[[Swims]]`, `[[Lifts]]`, `[[Walks]]`, `[[Races]]`, `[[Daily]]`). Each hub note itself links to `[[athlete-os]]`, so the graph clusters by discipline with `athlete-os` as the center. See the wikilink rule below for the general version of this.
 
 **Filenames** — dated notes use `YYYY-MM-DD-<type>-<id>.md` (id = Strava activity id where applicable) so re-imports can detect and skip duplicates by checking if the file already exists.
 
