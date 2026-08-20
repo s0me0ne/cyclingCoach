@@ -1,0 +1,30 @@
+filters:
+  and:
+    - file.inFolder("races")
+    - 'type == "race"'
+
+formulas:
+  days_until: '(date(date) - today()).days'
+
+properties:
+  date:
+    displayName: Date
+  distance_km:
+    displayName: "Distance (km)"
+  vert_m:
+    displayName: "Elevation (m)"
+  formula.days_until:
+    displayName: "Days Until"
+
+views:
+  - type: table
+    name: "Race Countdown"
+    filters:
+      and:
+        - 'status == "upcoming"'
+    order:
+      - file.name
+      - date
+      - distance_km
+      - vert_m
+      - formula.days_until
