@@ -1,0 +1,69 @@
+filters:
+  and:
+    - file.inFolder("training")
+    - 'type != "hub"'
+
+formulas:
+  days_ago: '(today() - date(date)).days'
+
+properties:
+  date:
+    displayName: Date
+  type:
+    displayName: Type
+  distance_km:
+    displayName: "Distance (km)"
+  duration_min:
+    displayName: "Duration (min)"
+  vert_m:
+    displayName: "Elevation (m)"
+  avg_hr:
+    displayName: "Avg HR"
+
+views:
+  - type: table
+    name: "All Training"
+    order:
+      - date
+      - type
+      - distance_km
+      - duration_min
+      - vert_m
+      - avg_hr
+    summaries:
+      distance_km: Sum
+      duration_min: Sum
+      vert_m: Sum
+
+  - type: table
+    name: "This Week"
+    filters:
+      and:
+        - 'formula.days_ago <= 7'
+        - 'formula.days_ago >= 0'
+    order:
+      - date
+      - type
+      - distance_km
+      - duration_min
+      - vert_m
+    summaries:
+      distance_km: Sum
+      duration_min: Sum
+
+  - type: table
+    name: "Last 30 Days"
+    filters:
+      and:
+        - 'formula.days_ago <= 30'
+        - 'formula.days_ago >= 0'
+    order:
+      - date
+      - type
+      - distance_km
+      - duration_min
+      - vert_m
+    limit: 30
+    summaries:
+      distance_km: Sum
+      duration_min: Sum
