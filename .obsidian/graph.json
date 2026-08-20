@@ -1,0 +1,59 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "file:athlete-os OR file:athlete-profile",
+      "color": { "a": 1, "rgb": 1752220 }
+    },
+    {
+      "query": "path:races/",
+      "color": { "a": 1, "rgb": 15844367 }
+    },
+    {
+      "query": "path:training/ (file:-ride- OR file:-virtualride-)",
+      "color": { "a": 1, "rgb": 16742912 }
+    },
+    {
+      "query": "path:training/ file:-run-",
+      "color": { "a": 1, "rgb": 15158332 }
+    },
+    {
+      "query": "path:training/ file:-swim-",
+      "color": { "a": 1, "rgb": 3447003 }
+    },
+    {
+      "query": "path:training/ file:-weighttraining-",
+      "color": { "a": 1, "rgb": 10181046 }
+    },
+    {
+      "query": "path:training/ file:-walk-",
+      "color": { "a": 1, "rgb": 3066993 }
+    },
+    {
+      "query": "path:training/ file:-workout-",
+      "color": { "a": 1, "rgb": 9807270 }
+    },
+    {
+      "query": "file:Rides OR file:Runs OR file:Swims OR file:Lifts OR file:Walks OR file:Workouts",
+      "color": { "a": 1, "rgb": 15790320 }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.3,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.5,
+  "repelStrength": 12,
+  "linkStrength": 1,
+  "linkDistance": 220,
+  "scale": 1,
+  "close": false
+}

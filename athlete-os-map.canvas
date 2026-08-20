@@ -1,0 +1,33 @@
+{
+  "nodes": [
+    { "id": "0cfd9d193800c9bc", "type": "file", "file": "athlete-os.md", "x": -150, "y": -60, "width": 300, "height": 120, "color": "#1ABC9C" },
+    { "id": "4c83c29b75627021", "type": "file", "file": "athlete-profile.md", "x": -650, "y": -400, "width": 280, "height": 100, "color": "#1ABC9C" },
+    { "id": "9f3db1d80560c4b1", "type": "file", "file": "races/Races.md", "x": 400, "y": -400, "width": 280, "height": 100, "color": "#F1C40F" },
+    { "id": "3ab500560d093a14", "type": "file", "file": "races/2026-09-13-100km-race.md", "x": 780, "y": -480, "width": 260, "height": 80, "color": "#F1C40F" },
+    { "id": "66b772bb1e777cb1", "type": "file", "file": "races/2026-10-04-140km-race.md", "x": 780, "y": -370, "width": 260, "height": 80, "color": "#F1C40F" },
+    { "id": "db676b16c02f085f", "type": "file", "file": "training/Rides.md", "x": -750, "y": -100, "width": 260, "height": 90, "color": "#FF7A00" },
+    { "id": "28e2dacdcfab0e2d", "type": "file", "file": "training/Runs.md", "x": -750, "y": 30, "width": 260, "height": 90, "color": "#E74C3C" },
+    { "id": "5808c6a9f3e8b6e0", "type": "file", "file": "training/Swims.md", "x": -750, "y": 160, "width": 260, "height": 90, "color": "#3498DB" },
+    { "id": "37b3547fc5f9f519", "type": "file", "file": "training/Lifts.md", "x": -750, "y": 290, "width": 260, "height": 90, "color": "#9B59B6" },
+    { "id": "63b58a9b752b0e34", "type": "file", "file": "training/Walks.md", "x": -750, "y": 420, "width": 260, "height": 90, "color": "#2ECC71" },
+    { "id": "25703fa732f3733c", "type": "file", "file": "training/Workouts.md", "x": -750, "y": 550, "width": 260, "height": 90, "color": "#95A5A6" },
+    { "id": "2b57b8ffbfd95238", "type": "text", "x": 400, "y": -60, "width": 280, "height": 120, "text": "## Reviews\n`reviews/` — training reviews (fed by wrap-my-day)", "color": "5" },
+    { "id": "cedf4c576dd1251f", "type": "text", "x": 400, "y": 100, "width": 280, "height": 140, "text": "## Health\n`health/` — sleep, HRV, RHR, recovery\n\n_Pending Garmin connection (local machine)_", "color": "6" },
+    { "id": "d51df3ec3c823a39", "type": "text", "x": -150, "y": 250, "width": 300, "height": 100, "text": "## Command Center\nHome note + live Bases table\n_(built in Step 8)_", "color": "4" }
+  ],
+  "edges": [
+    { "id": "1d4799fb22670e99", "fromNode": "0cfd9d193800c9bc", "fromSide": "left", "toNode": "4c83c29b75627021", "toSide": "right", "toEnd": "none" },
+    { "id": "cdce90f0bb1ee4f8", "fromNode": "0cfd9d193800c9bc", "fromSide": "right", "toNode": "9f3db1d80560c4b1", "toSide": "left", "toEnd": "none" },
+    { "id": "cefd3ea8f5495b3d", "fromNode": "9f3db1d80560c4b1", "fromSide": "right", "toNode": "3ab500560d093a14", "toSide": "left", "toEnd": "none" },
+    { "id": "10e1b1da02786eec", "fromNode": "9f3db1d80560c4b1", "fromSide": "right", "toNode": "66b772bb1e777cb1", "toSide": "left", "toEnd": "none" },
+    { "id": "0482492dc7fd8872", "fromNode": "0cfd9d193800c9bc", "fromSide": "left", "toNode": "db676b16c02f085f", "toSide": "right", "toEnd": "none" },
+    { "id": "6d1d24452a3ebd81", "fromNode": "0cfd9d193800c9bc", "fromSide": "left", "toNode": "28e2dacdcfab0e2d", "toSide": "right", "toEnd": "none" },
+    { "id": "d59922c7da04dc0b", "fromNode": "0cfd9d193800c9bc", "fromSide": "left", "toNode": "5808c6a9f3e8b6e0", "toSide": "right", "toEnd": "none" },
+    { "id": "9c7191b164d23e09", "fromNode": "0cfd9d193800c9bc", "fromSide": "left", "toNode": "37b3547fc5f9f519", "toSide": "right", "toEnd": "none" },
+    { "id": "894e851dccd52221", "fromNode": "0cfd9d193800c9bc", "fromSide": "left", "toNode": "63b58a9b752b0e34", "toSide": "right", "toEnd": "none" },
+    { "id": "98ecc9b07898c77c", "fromNode": "0cfd9d193800c9bc", "fromSide": "left", "toNode": "25703fa732f3733c", "toSide": "right", "toEnd": "none" },
+    { "id": "35976dda6c0952aa", "fromNode": "0cfd9d193800c9bc", "fromSide": "right", "toNode": "2b57b8ffbfd95238", "toSide": "left", "toEnd": "none" },
+    { "id": "a1ffd3d59000ae56", "fromNode": "0cfd9d193800c9bc", "fromSide": "right", "toNode": "cedf4c576dd1251f", "toSide": "left", "toEnd": "none" },
+    { "id": "3a3f070be2dfdd09", "fromNode": "0cfd9d193800c9bc", "fromSide": "bottom", "toNode": "d51df3ec3c823a39", "toSide": "top", "toEnd": "none" }
+  ]
+}

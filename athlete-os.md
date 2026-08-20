@@ -10,7 +10,7 @@ Central hub for Ricardo's Athlete OS Brain. Every part of the system links back 
 ## System map
 - [[athlete-profile]] — who I am, zones, races, coaching style
 - [[Races]] — race notes
-- Training hubs (created as history is imported): [[Rides]], [[Runs]], [[Swims]], [[Lifts]]
+- Training hubs: [[Rides]], [[Runs]], [[Swims]], [[Lifts]], [[Walks]], [[Workouts]]
 - `training/` — dated training notes
 - `reviews/` — training reviews
 - `health/` — sleep, HRV, recovery (pending Garmin connection)
